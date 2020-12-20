@@ -46,9 +46,11 @@ const puppeteer = require("puppeteer");
         await tab.goto(quesLinks)
         await tab.waitForSelector('div[data-attr2="Editorial"]', {visible : true});
         await tab.click('div[data-attr2="Editorial"]');
-            await tab.waitForSelector('.ui-btn.ui-btn-normal.ui-btn-primary.ui-btn-styled', {visible : true});
-            await tab.click('.ui-btn.ui-btn-normal.ui-btn-primary.ui-btn-styled');
-            console.log("Lock Button Found");
+            //await tab.waitForSelector('.ui-btn.ui-btn-normal.ui-btn-primary.ui-btn-styled', {visible : true});
+            //await tab.click('.ui-btn.ui-btn-normal.ui-btn-primary.ui-btn-styled');
+            //console.log("Lock Button Found");
+            await iWantToSave(tab);
+
             
             
         
@@ -93,3 +95,14 @@ const puppeteer = require("puppeteer");
 
 
 })();
+async function iWantToSave(tab){
+    try{
+        await tab.waitForSelector(".ui-btn.ui-btn-normal.ui-btn-primary.ui-btn-styled", {timeout:5000});
+        await tab.click(".ui-btn.ui-btn-normal.ui-btn-primary.ui-btn-styled");
+        console.log("Lock Button Found");
+    }
+    catch(error){
+        console.log("Lock Button Found");
+        return;
+    }
+}
