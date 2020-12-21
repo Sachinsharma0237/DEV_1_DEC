@@ -1,6 +1,7 @@
 //Electron Logic
 
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
+const ejse = require("ejs-electron");
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -11,7 +12,7 @@ function createWindow () {
     }
   })
 
-  win.loadFile('index.html').then(function(){
+  win.loadFile('index.ejs').then(function(){
       win.maximize();
       win.webContents.openDevTools();
   })
