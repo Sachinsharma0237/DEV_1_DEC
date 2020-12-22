@@ -1,5 +1,5 @@
-const id = "sadox54018@95ta.com";
-const pw = "Sachin@123";
+const id = "difeh89233@chatdays.com";
+const pw = "Sachin@12345";
 const puppeteer = require("puppeteer");
 
 //IIFE ==> Immediately Invoked Function
@@ -11,7 +11,6 @@ const puppeteer = require("puppeteer");
             headless : false,     
             defaultViewport : null,
             args : ["--start-maximized"],
-            slowMo: 10
     }); 
         let pages = await browser.pages();
         let tab = pages[0];
