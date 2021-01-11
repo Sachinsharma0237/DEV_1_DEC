@@ -51,6 +51,26 @@ $(document).ready(function(){
     $(".print").on("click", function(){
         window.print();
     });
+    /* copy Command */
+    $(".copy").on("click", function(){
+        
+    });
+    /* paste Command */
+    $(".paste").on("click", function(){
+        
+    });
+    /* cut Command */
+    $(".cut").on("click", function(){
+        
+    });
+    /* insert Command */
+    $(".insert").on("click", function(){
+        
+    });
+    /* sticky-notes Command */
+    $(".sticky-notes").on("click", function(){
+        
+    });
 
     /*Click Event Created on cell Class*/
     $(".cell").on("click", function(){

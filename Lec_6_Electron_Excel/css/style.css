@@ -34,6 +34,7 @@
     display: flex;
     text-align: center;
     cursor: pointer;
+    align-items: center;
 }
 .file-menu-options div{
     min-width: 60px;
@@ -68,9 +69,10 @@
 }
 .print{
     display: flex;
-    right: 0px;
+    left: 318px;
     position: absolute;
     justify-content: center;
+    align-items: center;
 }
 .home-menu-options{
     display: flex;
@@ -229,4 +231,47 @@
 .active-sheet{
     background: floralwhite;
     color : forestgreen;
+}
+img{
+    width: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+}
+.copy{
+    display: flex;
+    left: 383px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.paste{
+    display: flex;
+    left: 442px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.cut{
+    display: flex;
+    left: 497px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.insert{
+    display: flex;
+    left: 558px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-notes{
+    display: flex;
+    left: 610px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
 }
